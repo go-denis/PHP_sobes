@@ -14,7 +14,7 @@ function creatArray($collumn, $str){
 // /*Заполняем двумерный массив случайными числами: */
  for ($c = 0; $c < $collumn; $c++){
    for ($r = 0; $r < $str; $r++){
-     $array[$c][$r] = rand(0, 1000);
+     $array[$c][$r] = rand(1, 1000);//<---------Видимо тут была ошибка поменял 0 на 1
    }
  }
  return $array;
@@ -36,15 +36,14 @@ function printArray($array){
         }else{
             $sumCollumn[$strStop] = $value;
         }   
-        
+
 
         $strStop++;
         $sumStr += $value;
-        if($strStop == 7){
-            
-            printf(' '.$value.' Сумма: '.$sumStr.PHP_EOL);
+        if($strStop == 7){ 
+          printf(' '.$value.' Сумма: '.$sumStr.PHP_EOL);
         }else{
-            printf(' '.$value);
+          printf(' '.$value);
         }
       
     }
