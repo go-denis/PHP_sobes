@@ -11,15 +11,15 @@
 
   $step = 1;
 
-  for ($i = 1; $i <= 100; $i++){
+  for ($i = 1; $i <= 100; $step++){
  
 
-	  for($j=1; $j<=$step; $j++){
+	  for($j=0; $j<$step && $i <= 100; $j++){
 		  echo $i." ";
 		  $i++;
 	  }
 	  echo PHP_EOL;
-	  $step++;
+	  //$step++;
     
     }
 
