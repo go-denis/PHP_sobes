@@ -59,6 +59,5 @@ function printArray($array){
 }
 
   $mass = creatArray(5,7);
-  print_r($mass);
   printArray($mass);
 
